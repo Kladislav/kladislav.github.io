@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>REST API | MediaCube Pay</title>
+    <meta name="description" content="Документация к платёжной системе.">
+    <link rel="icon" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" sizes="16x16" href="/favicon-16x16.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.54851b14.css" as="style"><link rel="preload" href="/assets/js/app.4e600610.js" as="script"><link rel="preload" href="/assets/js/2.34432f15.js" as="script"><link rel="preload" href="/assets/js/8.ca10a4e5.js" as="script"><link rel="prefetch" href="/assets/js/3.a0bfc378.js"><link rel="prefetch" href="/assets/js/4.fec85292.js"><link rel="prefetch" href="/assets/js/5.d3424ed0.js"><link rel="prefetch" href="/assets/js/6.e2bde19e.js"><link rel="prefetch" href="/assets/js/7.901cc87b.js"><link rel="prefetch" href="/assets/js/9.fa296314.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54851b14.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">MediaCube Pay</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Главная</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">Документация</a></div><div class="nav-item"><a href="https://assist.mediacube.network" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Поддержка
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Главная</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">Документация</a></div><div class="nav-item"><a href="https://assist.mediacube.network" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Поддержка
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/" class="sidebar-link">Введение</a></li><li><a href="/guide/access-request.html" class="sidebar-link">Получение доступа</a></li><li><a href="/guide/rest-api.html" class="active sidebar-link">REST API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/rest-api.html#создание-транзакции" class="sidebar-link">Создание транзакции</a></li><li class="sidebar-sub-header"><a href="/guide/rest-api.html#статус-транзакции" class="sidebar-link">Статус транзакции</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="rest-api"><a href="#rest-api" class="header-anchor">#</a> REST API</h1> <h2 id="создание-транзакции"><a href="#создание-транзакции" class="header-anchor">#</a> Создание транзакции</h2> <h3 id="метод-post"><a href="#метод-post" class="header-anchor">#</a> Метод: POST</h3> <h3 id="endpoint-https-mediacube-id-payments"><a href="#endpoint-https-mediacube-id-payments" class="header-anchor">#</a> Endpoint: https://mediacube.id/payments</h3> <h3 id="параметры-запроса"><a href="#параметры-запроса" class="header-anchor">#</a> Параметры запроса:</h3> <h4 id="identify"><a href="#identify" class="header-anchor">#</a> <a href="/guide/access-request.html#идентификация">identify</a>:</h4> <pre><code>- обязательный
+- string
+</code></pre> <h4 id="purpose"><a href="#purpose" class="header-anchor">#</a> purpose:</h4> <pre><code>- обязательный 
+- enum(1 - License Fee, 2 - ADVERTISING_PAYMENT)
+</code></pre> <h4 id="request-id"><a href="#request-id" class="header-anchor">#</a> request_id:</h4> <pre><code>- обязательный
+- string
+- случайно сгенерированная уникальная строка
+- количество символов: 16-255
+</code></pre> <h4 id="description"><a href="#description" class="header-anchor">#</a> description:</h4> <pre><code>- обязательный
+- string
+- сообщение о снятии средств с вашего счета MediaCube. Будет отображено во вкладке _Транзакции_ в Mediacube.ID
+</code></pre> <h4 id="data"><a href="#data" class="header-anchor">#</a> data:</h4> <pre><code>- обязательный
+- array
+</code></pre> <h4 id="data-wallet"><a href="#data-wallet" class="header-anchor">#</a> data[*] wallet:</h4> <pre><code>- обязательный
+- string
+- существующий номер кошелька пользователя системы MediaCube
+</code></pre> <h4 id="data-amount"><a href="#data-amount" class="header-anchor">#</a> data[*] amount:</h4> <pre><code>- обязательный
+- numeric      
+</code></pre> <h4 id="data-description"><a href="#data-description" class="header-anchor">#</a> data[*] description:</h4> <pre><code>- обязательный
+- string     
+- сообщение о приходе средств. Будет отображено во вкладке _Транзакции_ в Mediacube.ID.
+</code></pre> <h3 id="пример-запроса"><a href="#пример-запроса" class="header-anchor">#</a> Пример запроса:</h3> <div class="language-php extra-class"><pre class="language-php"><code>        <span class="token variable">$headers</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token single-quoted-string string">'Authorization'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'Bearer &lt;jwt-token&gt;'</span><span class="token punctuation">,</span>
+            <span class="token single-quoted-string string">'Content-Type'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'application/json'</span><span class="token punctuation">,</span> 
+            <span class="token single-quoted-string string">'X-Requested-With'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'XMLHttpRequest'</span><span class="token punctuation">,</span>
+            <span class="token single-quoted-string string">'Accept'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'application/json'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token variable">$requestData</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token single-quoted-string string">'identify'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'&lt;identify-key&gt;'</span><span class="token punctuation">,</span>
+            <span class="token single-quoted-string string">'request_id'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'c02e79a2-d30c-46e3-b3dd-c0e6a987acf8'</span><span class="token punctuation">,</span>
+            <span class="token single-quoted-string string">'description'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'Выплаты по реферальной системе MediaCube Music'</span><span class="token punctuation">,</span>
+            <span class="token single-quoted-string string">'data'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">[</span>
+                    <span class="token single-quoted-string string">'description'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'Приход с реферальной системы MediaCube Music'</span><span class="token punctuation">,</span>
+                    <span class="token single-quoted-string string">'amount'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'10.423'</span><span class="token punctuation">,</span>
+                    <span class="token single-quoted-string string">'wallet'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'1111222233334444'</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                    <span class="token single-quoted-string string">'description'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'Приход с реферальной системы MediaCube Music'</span><span class="token punctuation">,</span>
+                    <span class="token single-quoted-string string">'amount'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'6.8'</span><span class="token punctuation">,</span>
+                    <span class="token single-quoted-string string">'wallet'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'5555666677778888'</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token variable">$response</span> <span class="token operator">=</span> <span class="token variable">$httpClient</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'https://mediacube.id/payments'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+            <span class="token single-quoted-string string">'form_params'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$requestData</span><span class="token punctuation">,</span> 
+            <span class="token single-quoted-string string">'headers'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$headers</span>
+        <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="возможные-ответы"><a href="#возможные-ответы" class="header-anchor">#</a> Возможные ответы:</h3> <h3 id="_201"><a href="#_201" class="header-anchor">#</a> 201</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;request_id&quot;</span><span class="token operator">:</span><span class="token string">&quot;c02e79a2-d30c-46e3-b3dd-c0e6a987acf8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;err_msg&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="status"><a href="#status" class="header-anchor">#</a> Status</h4> <pre><code>1 - processing
+2 - success
+3 - error
+</code></pre> <h3 id="_401"><a href="#_401" class="header-anchor">#</a> 401</h3> <p>У вашего Access Token нет доступа</p> <h3 id="_403"><a href="#_403" class="header-anchor">#</a> 403</h3> <p>У вашего Identify Key не хватает прав на совершение операции</p> <h3 id="_422"><a href="#_422" class="header-anchor">#</a> 422</h3> <p>Неверные данные</p> <h2 id="статус-транзакции"><a href="#статус-транзакции" class="header-anchor">#</a> Статус транзакции</h2> <h3 id="метод-get"><a href="#метод-get" class="header-anchor">#</a> Метод: GET</h3> <h3 id="endpoint-https-mediacube-id-payments-2"><a href="#endpoint-https-mediacube-id-payments-2" class="header-anchor">#</a> Endpoint: https://mediacube.id/payments</h3> <h3 id="параметры-запроса-2"><a href="#параметры-запроса-2" class="header-anchor">#</a> Параметры запроса:</h3> <h4 id="identify-2"><a href="#identify-2" class="header-anchor">#</a> <a href="/guide/access-request.html#идентификация">identify</a>:</h4> <pre><code>- обязательный
+</code></pre> <h4 id="request-id-2"><a href="#request-id-2" class="header-anchor">#</a> request_id:</h4> <pre><code>- обязательный
+</code></pre> <h3 id="возможные-ответы-2"><a href="#возможные-ответы-2" class="header-anchor">#</a> Возможные ответы:</h3> <h3 id="_200"><a href="#_200" class="header-anchor">#</a> 200</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;request_id&quot;</span><span class="token operator">:</span><span class="token string">&quot;c02e79a2-d30c-46e3-b3dd-c0e6a987acf8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span><span class="token number">2</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="status-2"><a href="#status-2" class="header-anchor">#</a> Status</h4> <pre><code>1 - processing
+2 - success
+3 - error
+</code></pre> <h3 id="_401-2"><a href="#_401-2" class="header-anchor">#</a> 401</h3> <p>У вашего Access Token нет доступа</p> <h3 id="_403-2"><a href="#_403-2" class="header-anchor">#</a> 403</h3> <p>У вашего Identify Key не хватает прав на совершение операции</p> <h3 id="error-message-codes"><a href="#error-message-codes" class="header-anchor">#</a> Error Message Codes</h3> <pre><code>1000 - ERROR_CODE_OAUTH_TOKEN
+2000 - ERROR_CODE_PERMISSION_DENIED
+3000 - ERROR_CODE_BALANCE_LESS_THEN_REQUESTED_AMOUNT
+4000 - ERROR_CODE_APPLICATION_EXCEPTION    
+</code></pre></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/access-request.html" class="prev">Получение доступа</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4e600610.js" defer></script><script src="/assets/js/2.34432f15.js" defer></script><script src="/assets/js/8.ca10a4e5.js" defer></script>
+  </body>
+</html>
